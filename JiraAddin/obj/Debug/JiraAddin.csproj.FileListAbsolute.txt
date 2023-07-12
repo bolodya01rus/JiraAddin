@@ -11,3 +11,4 @@ C:\Users\admin\source\repos\JiraAddin\JiraAddin\obj\Debug\JiraAddin.csproj.CoreC
 C:\Users\admin\source\repos\JiraAddin\JiraAddin\obj\Debug\JiraAddin.csproj.CopyComplete
 C:\Users\admin\source\repos\JiraAddin\JiraAddin\obj\Debug\JiraAddin.dll
 C:\Users\admin\source\repos\JiraAddin\JiraAddin\obj\Debug\JiraAddin.pdb
+C:\Users\admin\source\repos\JiraAddin\JiraAddin\obj\Debug\JiraAddin.RibbonJira.resources
