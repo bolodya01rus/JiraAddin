@@ -10,6 +10,10 @@ namespace JiraAddin
 {
     public partial class ThisAddIn
     {
+        protected override Microsoft.Office.Core.IRibbonExtensibility CreateRibbonExtensibilityObject()
+        {
+            return new Ribbon();
+        }
         private void ThisAddIn_Startup(object sender, System.EventArgs e)
         {
         }

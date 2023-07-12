@@ -184,6 +184,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="Ribbon.cs">
+      <XmlRibbon>true</XmlRibbon>
+    </Compile>
     <Compile Include="RibbonJira.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -203,6 +206,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="bin\Debug\Create.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Ribbon.xml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
