@@ -171,6 +171,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="RibbonJira.resx">
+      <DependentUpon>RibbonJira.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="JiraAddin_TemporaryKey.pfx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -179,6 +182,12 @@
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="RibbonJira.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RibbonJira.Designer.cs">
+      <DependentUpon>RibbonJira.cs</DependentUpon>
     </Compile>
     <Compile Include="ThisAddIn.cs">
       <SubType>Code</SubType>
