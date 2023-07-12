@@ -1,0 +1,13 @@
+C:\Users\admin\source\repos\JiraAddin\JiraAddin\bin\Debug\JiraAddin.dll
+C:\Users\admin\source\repos\JiraAddin\JiraAddin\bin\Debug\JiraAddin.pdb
+C:\Users\admin\source\repos\JiraAddin\JiraAddin\bin\Debug\JiraAddin.dll.manifest
+C:\Users\admin\source\repos\JiraAddin\JiraAddin\bin\Debug\JiraAddin.vsto
+C:\Users\admin\source\repos\JiraAddin\JiraAddin\bin\Debug\Microsoft.Office.Tools.Common.v4.0.Utilities.dll
+C:\Users\admin\source\repos\JiraAddin\JiraAddin\bin\Debug\Microsoft.Office.Tools.Outlook.v4.0.Utilities.dll
+C:\Users\admin\source\repos\JiraAddin\JiraAddin\obj\Debug\JiraAddin.csproj.AssemblyReference.cache
+C:\Users\admin\source\repos\JiraAddin\JiraAddin\obj\Debug\JiraAddin.Properties.Resources.resources
+C:\Users\admin\source\repos\JiraAddin\JiraAddin\obj\Debug\JiraAddin.csproj.GenerateResource.cache
+C:\Users\admin\source\repos\JiraAddin\JiraAddin\obj\Debug\JiraAddin.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\JiraAddin\JiraAddin\obj\Debug\JiraAddin.csproj.CopyComplete
+C:\Users\admin\source\repos\JiraAddin\JiraAddin\obj\Debug\JiraAddin.dll
+C:\Users\admin\source\repos\JiraAddin\JiraAddin\obj\Debug\JiraAddin.pdb
