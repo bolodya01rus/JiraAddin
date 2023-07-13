@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
+using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Reflection;
@@ -55,9 +57,16 @@ namespace JiraAddin
             this.ribbon = ribbonUI;
         }
 
+
+
         public void button1_Click(Office.IRibbonControl control)
         {
-            Globals.Ribbons.RibbonJira.comboBox1.Text = "asdasdasd";
+            Process.Start(new ProcessStartInfo("https://ya.ru/"));
+        }
+
+        public string GetImage(Office.IRibbonControl control)
+        {
+          return @"C:\Users\admin\source\repos\JiraAddin\JiraAddin\bin\Debug\Create.png";
         }
 
         #endregion

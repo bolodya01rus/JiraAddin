@@ -36,10 +36,10 @@
         {
             this.tab1 = this.Factory.CreateRibbonTab();
             this.group1 = this.Factory.CreateRibbonGroup();
-            this.group2 = this.Factory.CreateRibbonGroup();
             this.button1 = this.Factory.CreateRibbonButton();
             this.button2 = this.Factory.CreateRibbonButton();
             this.button3 = this.Factory.CreateRibbonButton();
+            this.group2 = this.Factory.CreateRibbonGroup();
             this.button4 = this.Factory.CreateRibbonButton();
             this.button5 = this.Factory.CreateRibbonButton();
             this.group3 = this.Factory.CreateRibbonGroup();
@@ -68,13 +68,6 @@
             this.group1.Label = "Заявки на доступ";
             this.group1.Name = "group1";
             // 
-            // group2
-            // 
-            this.group2.Items.Add(this.button4);
-            this.group2.Items.Add(this.button5);
-            this.group2.Label = "Заявки на обслуживание";
-            this.group2.Name = "group2";
-            // 
             // button1
             // 
             this.button1.ControlSize = Microsoft.Office.Core.RibbonControlSize.RibbonControlSizeLarge;
@@ -97,6 +90,13 @@
             this.button3.Label = "Кнопка";
             this.button3.Name = "button3";
             this.button3.ShowImage = true;
+            // 
+            // group2
+            // 
+            this.group2.Items.Add(this.button4);
+            this.group2.Items.Add(this.button5);
+            this.group2.Label = "Заявки на обслуживание";
+            this.group2.Name = "group2";
             // 
             // button4
             // 
@@ -127,6 +127,7 @@
             // 
             this.comboBox1.Label = "comboBox1";
             this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Text = null;
             // 
             // RibbonJira
             // 

@@ -4,13 +4,13 @@
         <tabs>
             <tab idMso="TabAddIns" label="Jira">
                 <group id="group1" label="Заявки на доступ">
-                    <button id="button1" onAction="button1_Click" label="Создать заявку" size="large" />
-                    <button id="button2" label="Кнопка2" size="large" />
-                    <button id="button3" label="Кнопка" size="large" />
+                    <button id="button1" onAction="button1_Click" label="Создать заявку" size="large" imageMso="HappyFace"/>
+                    <button id="button2" label="Кнопка2" size="large"  imageMso="JunkEmailSafeListsMenu"/>
+                    <button id="button3" label="Кнопка" size="large" imageMso="LassoSelectVisio" />
                 </group>
                 <group id="group2" label="Заявки на обслуживание">
-                    <button id="button4" label="button4" size="large" />
-                    <button id="button5" label="button5" size="large" />
+                    <button id="button4" label="button4" size="large" imageMso="LevelResource"/>
+                    <button id="button5" label="button5" size="large" imageMso="ListAddToDefaultView"/>
                 </group>
                 <group id="group3" label="group3">
                     <box id="box1" />
