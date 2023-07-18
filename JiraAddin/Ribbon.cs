@@ -1,4 +1,6 @@
-﻿using System;
+﻿using JiraAddin.Properties;
+using Microsoft.Office.Core;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Drawing;
@@ -44,7 +46,16 @@ namespace JiraAddin
 
         public string GetCustomUI(string ribbonID)
         {
-            return GetResourceText("JiraAddin.Ribbon.xml");
+            switch (ribbonID)
+            {
+                case "Microsoft.Outlook.Explorer":
+                    return GetResourceText("JiraAddin.Ribbon.xml");
+                //case "Microsoft.Outlook.Mail.Compose":
+                //    return GetResourceText("ButtonMainRibbon.Ribbon.xml");
+                default:
+                    return null;
+            }
+            //  return GetResourceText("ButtonMainRibbon.Ribbon.xml");
         }
 
         #endregion
@@ -56,17 +67,39 @@ namespace JiraAddin
         {
             this.ribbon = ribbonUI;
         }
+        public void ClickButton1(IRibbonControl control)
+        {
 
+            System.Windows.Forms.MessageBox.Show("Button clicked!");
 
+        }
 
-        public void button1_Click(Office.IRibbonControl control)
+        public void ClickButton2(IRibbonControl control)
         {
             Process.Start(new ProcessStartInfo("https://ya.ru/"));
         }
 
-        public string GetImage(Office.IRibbonControl control)
+        public void ClickButton3(IRibbonControl control)
         {
-          return @"C:\Users\admin\source\repos\JiraAddin\JiraAddin\bin\Debug\Create.png";
+            Process.Start(new ProcessStartInfo("https://www.kinopoisk.ru/"));
+        }
+
+        public Bitmap GetGlobalImg(IRibbonControl control)
+        {
+            return Resources.Create;
+        }
+
+        public Bitmap GetImgBtn1(IRibbonControl control)
+        {
+            return Resources.Button1;
+        }
+        public Bitmap GetImgBtn2(IRibbonControl control)
+        {
+            return Resources.Buttpo2;
+        }
+        public Bitmap GetImgBtn3(IRibbonControl control)
+        {
+            return Resources.Button3;
         }
 
         #endregion

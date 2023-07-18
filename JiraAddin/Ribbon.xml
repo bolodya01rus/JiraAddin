@@ -1,22 +1,29 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<customUI onLoad="Ribbon_Load" xmlns="http://schemas.microsoft.com/office/2006/01/customui">
-    <ribbon>
-        <tabs>
-            <tab idMso="TabAddIns" label="Jira">
-                <group id="group1" label="Заявки на доступ">
-                    <button id="button1" onAction="button1_Click" label="Создать заявку" size="large" imageMso="HappyFace"/>
-                    <button id="button2" label="Кнопка2" size="large"  imageMso="JunkEmailSafeListsMenu"/>
-                    <button id="button3" label="Кнопка" size="large" imageMso="LassoSelectVisio" />
-                </group>
-                <group id="group2" label="Заявки на обслуживание">
-                    <button id="button4" label="button4" size="large" imageMso="LevelResource"/>
-                    <button id="button5" label="button5" size="large" imageMso="ListAddToDefaultView"/>
-                </group>
-                <group id="group3" label="group3">
-                    <box id="box1" />
-                    <comboBox id="comboBox1" label="comboBox1" showImage="false" />
-                </group>
-            </tab>
-        </tabs>
-    </ribbon>
+<customUI onLoad="Ribbon_Load" xmlns="http://schemas.microsoft.com/office/2009/07/customui" >
+	<ribbon>
+		<tabs>
+
+			<tab idMso="TabMail">
+				<group id="group2" label="JIRA" insertBeforeMso="GroupMailDelete">
+
+					<!--<menu id="menu2" label="Создать заявку" getImage="GetGlobalImg" size="large">
+						<button id="button1" label="button2" onAction="ClickButton1" getImage="GetImgBtn1"/>
+						<button id="button2" label="button3" onAction="ClickButton2" getImage="GetImgBtn2"/>
+						<button id="button3" label="button4" onAction="ClickButton3" getImage="GetImgBtn3"/>
+					</menu>-->
+					<splitButton id="splitButton1" size="large" >
+						<button id="splitButton1__btn" label="Создать заявку" getImage="GetGlobalImg" onAction="ClickButton1" />
+						<menu id="splitButton1__mnu">
+							<button id="button5" label="button5" onAction="ClickButton1" getImage="GetImgBtn1" />
+							<button id="button6" label="button6" onAction="ClickButton2" getImage="GetImgBtn2"/>
+							<button id="button7" label="button7" onAction="ClickButton3" getImage="GetImgBtn3"/>
+						</menu>
+					</splitButton>
+				</group>
+			</tab>
+
+
+		</tabs>
+
+	</ribbon>
 </customUI>

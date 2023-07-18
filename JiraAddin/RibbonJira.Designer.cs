@@ -34,20 +34,29 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RibbonJira));
             this.tab1 = this.Factory.CreateRibbonTab();
             this.group1 = this.Factory.CreateRibbonGroup();
+            this.group2 = this.Factory.CreateRibbonGroup();
+            this.buttonGroup1 = this.Factory.CreateRibbonButtonGroup();
+            this.group3 = this.Factory.CreateRibbonGroup();
+            this.separator1 = this.Factory.CreateRibbonSeparator();
+            this.comboBox1 = this.Factory.CreateRibbonComboBox();
             this.button1 = this.Factory.CreateRibbonButton();
             this.button2 = this.Factory.CreateRibbonButton();
             this.button3 = this.Factory.CreateRibbonButton();
-            this.group2 = this.Factory.CreateRibbonGroup();
             this.button4 = this.Factory.CreateRibbonButton();
             this.button5 = this.Factory.CreateRibbonButton();
-            this.group3 = this.Factory.CreateRibbonGroup();
-            this.box1 = this.Factory.CreateRibbonBox();
-            this.comboBox1 = this.Factory.CreateRibbonComboBox();
+            this.button6 = this.Factory.CreateRibbonButton();
+            this.button7 = this.Factory.CreateRibbonButton();
+            this.splitButton1 = this.Factory.CreateRibbonSplitButton();
+            this.button8 = this.Factory.CreateRibbonButton();
+            this.button9 = this.Factory.CreateRibbonButton();
+            this.button10 = this.Factory.CreateRibbonButton();
             this.tab1.SuspendLayout();
             this.group1.SuspendLayout();
             this.group2.SuspendLayout();
+            this.buttonGroup1.SuspendLayout();
             this.group3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -68,10 +77,42 @@
             this.group1.Label = "Заявки на доступ";
             this.group1.Name = "group1";
             // 
+            // group2
+            // 
+            this.group2.Items.Add(this.button4);
+            this.group2.Items.Add(this.button5);
+            this.group2.Items.Add(this.buttonGroup1);
+            this.group2.Items.Add(this.separator1);
+            this.group2.Label = "Заявки на обслуживание";
+            this.group2.Name = "group2";
+            // 
+            // buttonGroup1
+            // 
+            this.buttonGroup1.Items.Add(this.button6);
+            this.buttonGroup1.Items.Add(this.button7);
+            this.buttonGroup1.Name = "buttonGroup1";
+            // 
+            // group3
+            // 
+            this.group3.Items.Add(this.splitButton1);
+            this.group3.Items.Add(this.comboBox1);
+            this.group3.Label = "group3";
+            this.group3.Name = "group3";
+            // 
+            // separator1
+            // 
+            this.separator1.Name = "separator1";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.Label = "comboBox1";
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Text = null;
+            // 
             // button1
             // 
             this.button1.ControlSize = Microsoft.Office.Core.RibbonControlSize.RibbonControlSizeLarge;
-            this.button1.Image = global::JiraAddin.Properties.Resources.Create;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.Label = "Создать заявку";
             this.button1.Name = "button1";
             this.button1.ShowImage = true;
@@ -91,13 +132,6 @@
             this.button3.Name = "button3";
             this.button3.ShowImage = true;
             // 
-            // group2
-            // 
-            this.group2.Items.Add(this.button4);
-            this.group2.Items.Add(this.button5);
-            this.group2.Label = "Заявки на обслуживание";
-            this.group2.Name = "group2";
-            // 
             // button4
             // 
             this.button4.ControlSize = Microsoft.Office.Core.RibbonControlSize.RibbonControlSizeLarge;
@@ -108,26 +142,47 @@
             // button5
             // 
             this.button5.ControlSize = Microsoft.Office.Core.RibbonControlSize.RibbonControlSizeLarge;
+            this.button5.Image = global::JiraAddin.Properties.Resources.Button1;
             this.button5.Label = "button5";
             this.button5.Name = "button5";
             this.button5.ShowImage = true;
             // 
-            // group3
+            // button6
             // 
-            this.group3.Items.Add(this.box1);
-            this.group3.Items.Add(this.comboBox1);
-            this.group3.Label = "group3";
-            this.group3.Name = "group3";
+            this.button6.Label = "button6";
+            this.button6.Name = "button6";
             // 
-            // box1
+            // button7
             // 
-            this.box1.Name = "box1";
+            this.button7.Label = "button7";
+            this.button7.Name = "button7";
             // 
-            // comboBox1
+            // splitButton1
             // 
-            this.comboBox1.Label = "comboBox1";
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Text = null;
+            this.splitButton1.Image = ((System.Drawing.Image)(resources.GetObject("splitButton1.Image")));
+            this.splitButton1.Items.Add(this.button8);
+            this.splitButton1.Items.Add(this.button9);
+            this.splitButton1.Items.Add(this.button10);
+            this.splitButton1.Label = "splitButton1";
+            this.splitButton1.Name = "splitButton1";
+            // 
+            // button8
+            // 
+            this.button8.Label = "button8";
+            this.button8.Name = "button8";
+            this.button8.ShowImage = true;
+            // 
+            // button9
+            // 
+            this.button9.Label = "button9";
+            this.button9.Name = "button9";
+            this.button9.ShowImage = true;
+            // 
+            // button10
+            // 
+            this.button10.Label = "button10";
+            this.button10.Name = "button10";
+            this.button10.ShowImage = true;
             // 
             // RibbonJira
             // 
@@ -141,6 +196,8 @@
             this.group1.PerformLayout();
             this.group2.ResumeLayout(false);
             this.group2.PerformLayout();
+            this.buttonGroup1.ResumeLayout(false);
+            this.buttonGroup1.PerformLayout();
             this.group3.ResumeLayout(false);
             this.group3.PerformLayout();
             this.ResumeLayout(false);
@@ -158,7 +215,14 @@
         internal Microsoft.Office.Tools.Ribbon.RibbonButton button4;
         internal Microsoft.Office.Tools.Ribbon.RibbonButton button5;
         internal Microsoft.Office.Tools.Ribbon.RibbonGroup group3;
-        internal Microsoft.Office.Tools.Ribbon.RibbonBox box1;
+        internal Microsoft.Office.Tools.Ribbon.RibbonButtonGroup buttonGroup1;
+        internal Microsoft.Office.Tools.Ribbon.RibbonButton button6;
+        internal Microsoft.Office.Tools.Ribbon.RibbonButton button7;
+        internal Microsoft.Office.Tools.Ribbon.RibbonSeparator separator1;
+        internal Microsoft.Office.Tools.Ribbon.RibbonSplitButton splitButton1;
+        internal Microsoft.Office.Tools.Ribbon.RibbonButton button8;
+        internal Microsoft.Office.Tools.Ribbon.RibbonButton button9;
+        internal Microsoft.Office.Tools.Ribbon.RibbonButton button10;
         internal Microsoft.Office.Tools.Ribbon.RibbonComboBox comboBox1;
     }
 
